@@ -4,10 +4,10 @@ export default function NavBar() {
   return (
     <Navbar>
       <NavbarBrand>
-        <Image width={36} src="/odin.png"/>
+        <Image width={50} src="/odin.png"/>
         <p className="font-bold text-inherit">Path of the Norns</p>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             Home
@@ -20,10 +20,10 @@ export default function NavBar() {
                 Products
               </Button>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Static Actions" variant="light" color="primary">
-              <DropdownItem key="decks">Tarot Decks</DropdownItem>
-              <DropdownItem key="gems">Gems</DropdownItem>
-              <DropdownItem key="books">Books</DropdownItem>
+            <DropdownMenu aria-label="Static Actions" color="primary">
+              <DropdownItem>Tarot Decks</DropdownItem>
+              <DropdownItem>Gems</DropdownItem>
+              <DropdownItem>Books</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
@@ -34,7 +34,7 @@ export default function NavBar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>

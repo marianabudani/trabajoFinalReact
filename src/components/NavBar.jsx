@@ -1,4 +1,5 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, Image, Dropdown,DropdownTrigger, DropdownMenu, DropdownItem,} from "@nextui-org/react";
+import {Badge, Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, Image, Dropdown,DropdownTrigger, DropdownMenu, DropdownItem,} from "@nextui-org/react";
+import { CartWidget } from "./CartWidget";
 
 export default function NavBar() {
   return (
@@ -34,6 +35,9 @@ export default function NavBar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
+        <Badge color="danger" content={5} shape="circle">
+          <CartWidget size={30} />
+        </Badge>
         <NavbarItem className="lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
